@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-
+// give better name
 public class script1 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
         MyIntMethod(12);
+        // methods should be CamelCase - IfMyInt()
         ifMyInt(11);
         switchMyInt(3);
     }  
@@ -28,6 +29,7 @@ public class script1 : MonoBehaviour
 
     bool ifMyInt(int value)
     {
+    // value is a saved c# keyword, try use a diffrent name for this variable
         if (value > 10)
         {
             Debug.Log("this number is smaller than ten");
@@ -40,7 +42,7 @@ public class script1 : MonoBehaviour
         }
 
     }
-
+// method name should be CamelCase
      public void switchMyInt (int value)
         {
             switch (value)
